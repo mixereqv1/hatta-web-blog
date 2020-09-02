@@ -89,5 +89,16 @@ module.exports = {
         apiToken: process.env.API_DATOCMS_KEY,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `600`, `700`, `900`],
+          },
+        ],
+      },
+    },
   ],
 };
